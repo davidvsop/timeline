@@ -19,11 +19,25 @@ export default function Home ({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta
+          name="description"
+          content="Reading history, with a history!"
+          key="desc"
+        />
+        <meta property="og:title" content="History reader" />
+        <meta
+          property="og:description"
+          content="Reading history, with a history!"
+        />
+        <meta
+          property="og:image"
+          content="/public/images/profile.jpg"
+        />
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Helloooooooo</p>
+        <p>Hello</p>
         <p>
-          Welcome to website
+          Welcome to historiography site in progress
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
