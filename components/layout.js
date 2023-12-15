@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Neo';
-export const siteTitle = 'Neo Website';
+const name = 'Neo\'s blog';
+export const siteTitle = 'Neos blog';
 
 export default function Layout({ children, home }) {
   return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="The home of the history reader"
         />
         <meta
           property="og:image"
@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl}><Link href={"https://github.com/davidvsop/timeline"} target={"blank"}>{name}</Link></h1>
           </>
         ) : (
           <>
