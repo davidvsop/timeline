@@ -1,1 +1,1 @@
-Timeline project for reading long historiographies articles by section.
+Timeline project for reading long historiographies by section.
